@@ -1,0 +1,31 @@
+﻿<Window x:Class="StepProgressBarDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:StepProgressBarDemo"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:primitives="clr-namespace:StepProgressBarDemo.Primitives"
+        Title="MainWindow" 
+        WindowStartupLocation="CenterScreen"
+        Width="800"
+        Height="650"
+        mc:Ignorable="d">
+    <Grid>
+        <primitives:StepProgressBar Style="{StaticResource verticalStepProgressBar}">
+            <primitives:StepProgressBarItem Content="计算设置"
+                                            DoneImageSource="./Resources/Images/CalcParams_1.png"
+                                            IsDone="True"
+                                            UndoneImageSource="./Resources/Images/CalcParams_0.png" />
+            <primitives:StepProgressBarItem Content="油品评价"
+                                            DoneImageSource="./Resources/Images/Assay_1.png"
+                                            IsDone="True"
+                                            UndoneImageSource="./Resources/Images/Assay_0.png" />
+            <primitives:StepProgressBarItem Content="切割规则"
+                                            DoneImageSource="./Resources/Images/CutRule_1.png"
+                                            UndoneImageSource="./Resources/Images/CutRule_0.png" />
+            <primitives:StepProgressBarItem Content="虚拟组分"
+                                            DoneImageSource="./Resources/Images/Pseudo_1.png"
+                                            UndoneImageSource="./Resources/Images/Pseudo_0.png" />
+        </primitives:StepProgressBar>
+    </Grid>
+</Window>
