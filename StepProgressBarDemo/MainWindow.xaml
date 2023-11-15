@@ -5,10 +5,10 @@
         xmlns:local="clr-namespace:StepProgressBarDemo"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:primitives="clr-namespace:StepProgressBarDemo.Primitives"
-        Title="MainWindow" 
-        WindowStartupLocation="CenterScreen"
+        Title="MainWindow"
         Width="800"
         Height="650"
+        WindowStartupLocation="CenterScreen"
         mc:Ignorable="d">
     <Grid>
         <primitives:StepProgressBar Style="{StaticResource verticalStepProgressBar}">
